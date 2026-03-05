@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*   SELETORES PERSONALIZADOS
+             # = id
+             . = class
+             : = pseudo-classs
+             :: = pseudo-element
+             > = children
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: greenyellow;
+        }
+
+        .especial {
+            background-color: rgb(241, 104, 104);
+        }
+
+        .especial::before {
+            content: '→';
+        }
+
+        .especial::after {
+            content: '←';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/Pedro1dog?tab=repositories" target="_blank">Github</a></li>
+        <li><a href="https://www.youtube.com/channel/UCUr2Kt_zHdIJ34uADsZGP2w" target="_blank" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://pedro1dogofficial.vercel.app/" target="_blank" class="especial">Site do Pedro1dog</a></li>
+    </ul>
+</body>
+</html>
