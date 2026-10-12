@@ -7,14 +7,27 @@
 
 #container {
     display: grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: 300px 300px;
-    gap: 30px;
-    align-items: stretch;
-    align-content: space-evenly;
-    height: 100vh;
+    gap: 10px;
+    grid-template-rows: 100px;
 }
 
-.item {
-    background-color: rgb(55, 157, 252);
+header {
+    background-color: blueviolet;
+    align-self: center;
+}
+
+aside {
+    background-color: aqua;
+}
+
+article {
+    background-color: chartreuse;
+}
+
+section {
+    background-color: blue;
+}
+
+footer {
+    background-color: brown;
 }
